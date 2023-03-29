@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Caveat&family=Concert+One&family=Courgette&family=Dangrek&family=Fredoka+One&family=Itim&family=Neucha&family=Pacifico&family=Pangolin&family=Patrick+Hand&family=Sniglet&family=Sono:wght@300;400;500;600&family=Space+Mono&display=swap");
+
+:root{
+    --skin-color: rgb(137, 133, 218);
+    --bg-section: #151515;
+    --text-color: #ffffff
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* html,
+body{
+    height: 100%;
+} */
+
+a{
+    text-decoration: none;
+}
+
+h1, h2 *{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: serif;
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+    /* background: rgb(31, 28, 53); */
+}
+
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: -15px;
+    padding-right: -15px;
+    position: relative;
+}
+
+/* HEADER */
+
+.header{
+    background: hsl(283, 29%, 14%);
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 0 10px;
+}
+
+.header .header-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.header .header-img img{
+    width:100% ;
+    opacity: .4;
+}
+/* ---------------------------- */
+
+/* Section Home */
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.section{
+    background-image: url('../img/img7.jpg');
+    background-size: cover;
+    /* min-height: 100vh; */
+    display: block;
+    padding: 0 20px;
+    position: fixed;
+    left: 0;
+    top: 64px;
+    right: 0;
+    /* bottom: 0; */
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.3 ease;
+}
+
+.section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+.section-title h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--text-color);
+    position: relative;
+  }
+
+.section-title h2::before {
+    content: " ";
+    height: 4px;
+    width: 70px;
+    background-color: var(--skin-color);
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+.section.prev-section{
+    z-index: 1;
+}
+
+.section.active{
+    z-index: 2;
+    opacity: 1;
+    animation: sliderSection 1s ease;
+}
+
+@keyframes sliderSection {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.header .header-logo i{
+    padding: 7px;
+    font-size: 2rem;
+    border-radius: 5px;
+    color: rgb(41, 39, 39);
+}
+
+h1.hello {
+    font-size: 33px;
+    color: #fff;
+}
+  
+h1.hello span {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--skin-color);
+}
+  
+.name {
+    background-color: var(--skin-color);
+    background-image: linear-gradient(45deg, var(--skin-color), #A9A5F7);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    /* -moz-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    -moz-text-fill-color: transparent;
+}
+  
+h1.my-profession {
+    font-size: 33px;
+    margin: 35px 0;
+    color: #fff;
+}
+  
+h1.my-profession span {
+    font-size: 38px;
+}
+  
+.typing {
+    color: var(--skin-color);
+}
+
+.text-typing{
+    /* padding: 0 0 0 40px; */
+    text-align: center;
+}
+
+/* section about me */
+
+.section .about-contain{
+    /* padding-top: 70px; */
+    padding-bottom: 70px;
+  }

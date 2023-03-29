@@ -1,0 +1,236 @@
+@media (max-width: 799px) {
+  .header .header-content {
+    /* display: none; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .header .header-menu {
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    width: 45px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+  }
+
+  .header .header-menu a {
+    color: gray;
+    font-size: 1.8rem;
+    padding: 4px 0 0 0;
+  }
+
+  .header .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px 0 20px;
+    /* height: 100%; */
+  }
+
+  .header .header-content {
+    position: fixed;
+    width: 200px;
+    top: 64px;
+    left: -300px;
+    background: #1a0d2b;
+    box-shadow: rgba(173, 177, 181, 0.599) 0px 8px 24px;
+    height: 50vh;
+    transition: all 1s;
+    z-index: 10;
+  }
+
+  .header .open {
+    left: 0;
+  }
+
+  .header .header-icon div a.active {
+    color: #fff;
+  }
+
+  .header .header-icon div a:hover {
+    color: #fff;
+  }
+
+  .header .header-icon {
+    padding: 20px;
+  }
+
+  .header .header-icon div {
+    margin-bottom: 20px;
+  }
+
+  .home .social-network {
+    width: 70%;
+    max-width: 300px;
+    min-width: 158px;
+    height: 64px;
+    background: rgb(18, 15, 41);
+    border-radius: 10px;
+  }
+
+  .home .text-typing {
+    margin-top: 30px;
+  }
+
+  .home .text-typing h1.hello {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .home .text-typing h1.hello span {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--skin-color);
+  }
+
+  .home .text-typing h1.my-profession {
+    font-size: 20px;
+    margin: 35px 0;
+    color: #fff;
+  }
+
+  .home .text-typing h1.my-profession span {
+    font-size: 25px;
+  }
+
+  .home .home-img-socialIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10px; */
+  }
+
+  .home .home-img-socialIcons img {
+    width: 140px;
+    height: 170px;
+    border-radius: 50%;
+    z-index: 8;
+  }
+
+  .home .home-img-socialIcons .social-network ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    height: 100%;
+  }
+
+  .home .home-img-socialIcons .social-network ul .icon {
+    width: 45px;
+    border-radius: 5px;
+    height: 35px;
+    text-align: center;
+    line-height: 2;
+    border: 1px solid var(--skin-color);
+  }
+
+  .home .home-img-socialIcons .social-network ul .icon:hover {
+    transform: scale(1.05);
+    transition: transform 200 ease;
+    /* opacity: 2; */
+  }
+
+  .header .header-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  /* setion About me */
+
+  .about .about-contain {
+    border-radius: 5px;
+    background: var(--bg-section);
+    font-family: "sono", sans serif;
+
+  }
+
+  .about .about-contain .about-content .about-text {
+    color: #fff;
+    font-size: 24px;
+  }
+
+  .padd {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .about .about-contain .about-content .about-text h3{
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--text-color);
+  }
+
+  .about .about-contain .about-content .about-text h3 span {
+    color: var(--skin-color);
+  }
+
+  .about .about-contain .about-content .about-text p{
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 800px) {
+  .header .header-icon {
+    display: flex;
+    gap: 30px;
+  }
+
+  .header .header-menu {
+    display: none;
+  }
+
+  .section {
+    background-image: url("../img/img2.jpg");
+    background-size: cover;
+  }
+
+  .header .header-icon div {
+    border-radius: 5px;
+  }
+
+  .header .header-icon div a {
+    /* width: 100%; */
+    border: 1px solid gray;
+    padding: 4px;
+    border-radius: 5px;
+  }
+
+  .header .header-icon div:hover,
+  .header .header-icon div a:hover {
+    background: var(--skin-color);
+    /* border: none; */
+    color: #fff;
+  }
+  /* 
+    .header .header-icon div a:hover{
+        color: #fff;
+    } */
+
+  .header .header-icon div a.active {
+    background: var(--skin-color);
+    color: #fff;
+    border: none;
+  }
+
+  /* section home */
+
+  .home .home-img-socialIcons img {
+    width: 140px;
+    height: 170px;
+    border-radius: 50%;
+  }
+
+  .home .home-circle img {
+    margin: auto;
+    width: 300px;
+    height: 350px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 9;
+  }
+}
